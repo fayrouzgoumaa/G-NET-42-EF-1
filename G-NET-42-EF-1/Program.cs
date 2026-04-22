@@ -25,8 +25,17 @@ namespace G_NET_42_EF_1
                 var book = new Book
                 {
                     Title="C#",
-
+                    ISBN="123",
+                    price=100,
+                    NumberOfPages=250,
+                    YearPublished=2026,
+                    IsInStock=true,
+                    category=category,
                 };
+                book.Authors.Add(Author);
+                context.Books.Add(book);
+                context.SaveChanges();
+                Console.WriteLine("Data inserted successfully")
             }
 
         }
