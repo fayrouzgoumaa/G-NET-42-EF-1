@@ -16,7 +16,7 @@ namespace G_NET_42_EF_1
         public int YearPublished { get; set; }
         public bool IsInStock { get; set; }
         public int categoryId {  get; set; }
-        public category category {  get; set; }
+        public Category category {  get; set; }
         public List<Author> Authors { get; set; } = new List<Author>();
 
     }
